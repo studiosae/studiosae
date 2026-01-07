@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f7ecea;
+  --color-secondary: #a18c7f;
+
+  --breakpoint-xs: 24rem;
+}
+
+html,
+body {
+  background-color: #f7ecea;
+}
+
+.font-heading {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+}
+
+.page-max-width {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
