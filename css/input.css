@@ -3,6 +3,7 @@
 @theme {
   --color-primary: #f7ecea;
   --color-secondary: #a18c7f;
+  --color-secondary-dark: #3e3129;
 
   --breakpoint-xs: 24rem;
 }
@@ -10,6 +11,8 @@
 html,
 body {
   background-color: #f7ecea;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .font-heading {

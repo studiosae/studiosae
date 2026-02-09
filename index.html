@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,30 +7,65 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./css/output1.css" />
   </head>
   <body>
-    <main class="grid place-items-center h-[80vh] w-full font-heading">
-      <div class="flex flex-col space-y-4 items-center justify-center">
-        <h1 class="text-semibold text-4xl text-center">Coming soon</h1>
-
-        <h2 class="text-xl">Studiô Saé</h2>
-
-        <a
-          class="flex items-center space-x-3 mt-5 text-xl text-secondary font-bold"
-          href="https://www.instagram.com/sstudiosaee/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img src="./assets/instagram-logo.svg" class="w-5 h-5" />
-          <p>Instagram - @sstudiosaee</p>
-        </a>
+    <main>
+      <div class="bg-white sticky top-0 h-16">
+        <header class="page-max-width"></header>
       </div>
+      <section class="page-max-width flex gap-10 p-10">
+        <img
+          src="./assets/images/hero-image.webp"
+          class="aspect-4/3 w-1/2 rounded-3xl object-cover self-center"
+          alt=""
+        />
+        <div class="w-1/2 flex flex-col justify-center p-5 rounded-3xl">
+          <p
+            class="bg-secondary/50 text-secondary-dark px-3 py-1.5 rounded-full w-fit"
+          >
+            Mindfulness + Hypnotherapy Based Counseling
+          </p>
+          <h1
+            class="text-5xl mt-6 font-heading leading-tight font-medium text-secondary-dark"
+          >
+            When everything feels like too much, you do not have to handle it
+            alone
+          </h1>
+          <p class="text-base mt-3">
+            Thoughtful psychological counseling using mindfulness and
+            hypnotherapy to support emotional balance, clarity, and inner
+            steadiness, without medication.
+          </p>
+
+          <a
+            href="#"
+            class="bg-secondary-dark text-primary w-fit px-6 py-2 hover:bg-secondary hover:text-secondary-dark rounded-full text-xl mt-5 text-medium transition-all duration-300"
+            >Get started</a
+          >
+
+          <div class="flex items-center pl-2 mt-6 text-lg">
+            <span
+              class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"
+            ></span>
+            <p class="mr-5">Confidential</p>
+            <span
+              class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"
+            ></span>
+            <p class="mr-5">Online + In-person</p>
+            <span
+              class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"
+            ></span>
+            <p class="mr-5">Affordable</p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
