@@ -14,6 +14,7 @@ body {
   background-color: #f7ecea;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 
 .font-heading {

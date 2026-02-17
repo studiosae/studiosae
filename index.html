@@ -1,636 +1,1197 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansanwad</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mansanwad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output1.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/output1.css" />
-</head>
-
-<body>
-  <main>
-    <div class="bg-white sticky top-0 px-5 md:px-10 py-2.5">
-      <header class="page-max-width flex items-center justify-between relative">
-        <img src="./assets/logos/logo.png" class="w-24 h-24 object-contain" alt="">
-
-        <!-- Desktop Nav -->
-        <nav class="hidden lg:block">
-          <ul class="flex gap-5">
-            <li><a href="#">Home</a></li>
-            <li><a href="#talk-to-us">Talk to Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#why-choose-mansanwad">Why Mansanwad?</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- Mobile Nav Button -->
-        <button id="mobile-menu-btn" class="lg:hidden p-2 text-secondary-dark focus:outline-none">
-          <!-- Hamburger Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-
-        <!-- Mobile Nav Menu -->
-        <div id="mobile-menu"
-          class="absolute top-full left-0 w-full bg-white shadow-lg rounded-b-3xl hidden flex-col p-5 gap-4 lg:hidden z-50">
-          <a href="#"
-            class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100">Home</a>
-          <a href="#talk-to-us"
-            class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100">Talk
-            to Us</a>
-          <a href="#services"
-            class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100">Services</a>
-          <a href="#why-choose-mansanwad"
-            class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100">Why
-            Mansanwad?</a>
-          <a href="#contact"
-            class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2">Contact</a>
-        </div>
-      </header>
-    </div>
-    <section id="hero-section"
-      class="page-max-width flex flex-col md:flex-row gap-6 md:gap-10 p-5 md:p-10 lg:items-center">
-      <img src="./assets/images/hero-image.webp" class="aspect-4/3 w-full md:w-1/2 rounded-3xl object-cover self-center"
-        alt="" />
-      <div class="w-full md:w-1/2 flex flex-col justify-center md:p-5 rounded-3xl">
-        <p
-          class="bg-secondary/50 text-secondary-dark px-3 py-1.5 rounded-full w-fit text-sm md:text-base lg:text-base xl:text-base">
-          Mindfulness + Hypnotherapy Based Counseling
-        </p>
-        <h1
-          class="text-4xl md:text-3xl lg:text-4xl xl:text-5xl mt-6 font-heading leading-tight font-medium text-secondary-dark">
-          When everything feels like too much, you do not have to handle it
-          alone
-        </h1>
-        <p class="text-base md:text-sm lg:text-base mt-3">
-          Thoughtful psychological counseling using mindfulness and
-          hypnotherapy to support emotional balance, clarity, and inner
-          steadiness, without medication.
-        </p>
-
-        <a href="#"
-          class="bg-secondary-dark text-primary w-fit px-6 py-2 hover:bg-secondary hover:text-secondary-dark rounded-full text-lg md:text-base lg:text-lg xl:text-xl mt-5 text-medium transition-all duration-300">Get
-          started</a>
-
-        <div class="flex flex-wrap items-center gap-5 pl-2 mt-6 text-lg md:text-base lg:text-lg">
-          <div class="flex items-center">
-            <span class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"></span>
-            <p class="">Confidential</p>
+  <body>
+    <main>
+      <div class="bg-white sticky top-0 px-5 md:px-10 py-2.5">
+        <header
+          class="page-max-width flex items-center justify-between relative"
+        >
+          <div class="flex flex-row items-end space-x-2">
+            <img
+              src="./assets/logos/logo.png"
+              class="w-24 h-24 object-contain"
+              alt="Logo"
+            />
+            <p class="h-fit mb-1 text-secondary font-heading font-medium">
+              (A unit of Studio Sae)
+            </p>
           </div>
 
-          <div class="flex items-center">
-            <span class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"></span>
-            <p class="">Online + In-person</p>
-          </div>
-
-          <div class="flex items-center">
-            <span class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"></span>
-            <p class="">Affordable</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="bg-accent">
-      <section id="talk-to-us"
-        class="scroll-mt-24 page-max-width flex flex-col md:flex-row gap-10 px-5 py-10 md:p-10 items-center ">
-        <div class="w-full md:w-1/2">
-          <h2 class="text-4xl font-heading leading-tight font-medium text-secondary-dark mb-6">
-            If any of this feels familiar,<br />
-            you are in the right place
-          </h2>
-          <ul class="space-y-4 text-lg text-gray-700 list-disc pl-5 marker:text-secondary-dark">
-            <li>
-              You feel anxious, overwhelmed, or stuck in repetitive thought loops
-            </li>
-            <li>
-              Stress, burnout, or emotional fatigue is spilling into daily life
-            </li>
-            <li>
-              You are struggling with habits, confidence, or self-control
-            </li>
-            <li>
-              Academic pressure or performance anxiety feels unmanageable
-            </li>
-            <li>You want support without medication</li>
-          </ul>
-          <a href="#"
-            class="inline-block bg-secondary-dark text-primary px-8 py-3 rounded-full text-lg font-medium mt-8 hover:opacity-90 transition-opacity">
-            Talk to Us
-          </a>
-        </div>
-        <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
-          <img
-            src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            alt="Person sitting" class="w-full h-48 object-cover rounded-3xl" />
-          <img
-            src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            alt="Person reading" class="w-full h-48 object-cover rounded-3xl" />
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            alt="Person profile" class="w-full h-48 object-cover rounded-3xl" />
-          <img
-            src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            alt="Flowers" class="w-full h-48 object-cover rounded-3xl" />
-        </div>
-      </section>
-    </div>
-
-
-    <!-- Services Section -->
-    <section id="services" class="page-max-width scroll-mt-24 px-5 py-10 md:p-10">
-      <div class="flex flex-col justify-center items-center pb-10">
-        <h2 class="text-3xl font-heading text-secondary-dark font-bold mb-3">Emotional Wellbeing Sessions</h2>
-        <p class="w-full text-center">Work with the subconscious to address habits,
-          fears, emotional blocks, <br class="hidden lg:block"> and stress responses
-          in a safe, guided way.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <!-- Service 1 -->
-        <div class="flex flex-col gap-4">
-          <img
-            src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            class="w-full h-64 object-cover rounded-3xl" alt="Hypnotherapy Session">
-          <h3 class="text-3xl font-heading font-medium text-secondary-dark mt-2">Hypnotherapy</h3>
-          <p class="text-gray-700">Work with the subconscious to address habits, fears, emotional blocks, and stress
-            responses in a safe, guided way.</p>
-          <button data-modal-target="modal-hypnotherapy"
-            class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer">More
-            Information</button>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="flex flex-col gap-4">
-          <img
-            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            class="w-full h-64 object-cover rounded-3xl" alt="Mindfulness Practice">
-          <h3 class="text-3xl font-heading font-medium text-secondary-dark mt-2">Mindfulness, CBT, EFT</h3>
-          <p class="text-gray-700">Practical tools to manage thoughts, regulate emotions, and build awareness in
-            everyday situations.</p>
-          <button data-modal-target="modal-mindfulness"
-            class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer">More
-            Information</button>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="flex flex-col gap-4">
-          <img
-            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            class="w-full h-64 object-cover rounded-3xl" alt="Emotional Balance">
-          <h3 class="text-3xl font-heading font-medium text-secondary-dark mt-2">Finding Emotional Balance</h3>
-          <p class="text-gray-700">Support during periods of change, overwhelm, or emotional instability, when life
-            feels unsettled or unclear.</p>
-          <button data-modal-target="modal-emotional"
-            class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer">More
-            Information</button>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="flex flex-col gap-4">
-          <img
-            src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-            class="w-full h-64 object-cover rounded-3xl" alt="Therapy Office">
-          <h3 class="text-3xl font-heading font-medium text-secondary-dark mt-2">Other Psychotherapies</h3>
-          <p class="text-gray-700">An integrative approach based on your needs, comfort, and goals.</p>
-          <button data-modal-target="modal-other"
-            class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer">More
-            Information</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Mansanwad Section -->
-    <div class="bg-accent">
-      <section id="why-choose-mansanwad" class="page-max-width scroll-mt-24 py-10 px-5 md:p-10">
-        <div class="mb-10">
-          <h2 class="text-3xl md:text-4xl font-heading font-medium text-secondary-dark mb-4">Why choose Mansanwad?</h2>
-          <p class="text-gray-700 max-w-2xl text-lg">Calm, clear, non-rushed support, with a drug-free approach and a
-            strong focus on confidentiality.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <!-- Card 1 -->
-          <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
-            <h3 class="text-2xl font-bold mb-6">What you can expect</h3>
-            <ul class="space-y-4 text-gray-700 text-lg">
-              <li class="flex items-start">
-                <span class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"></span>
-                Drug-free, supportive care
-              </li>
-              <li class="flex items-start">
-                <span class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"></span>
-                Hypnotherapy and mindfulness as core tools
-              </li>
-              <li class="flex items-start">
-                <span class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"></span>
-                Ethical practice and clear boundaries
-              </li>
-              <li class="flex items-start">
-                <span class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"></span>
-                A calm, non-judgmental environment
-              </li>
-              <li class="flex items-start">
-                <span class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"></span>
-                Sessions tailored to your pace and needs
-              </li>
+          <!-- Desktop Nav -->
+          <nav class="hidden lg:block">
+            <ul class="flex gap-5">
+              <li><a href="#">Home</a></li>
+              <li><a href="#talk-to-us">Talk to Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#why-choose-mansanwad">Why Mansanwad?</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
+          </nav>
 
-          <!-- Card 2 -->
-          <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm flex flex-col justify-center">
-            <h3 class="text-2xl font-bold mb-4">You do not need perfect words to begin.</h3>
-            <p class="text-gray-700 text-lg mb-8">Just share what is going on, we will take it from there.</p>
-            <a href="#"
-              class="bg-secondary-dark/80 text-white w-fit px-8 py-3 rounded-full text-lg font-medium hover:bg-secondary-dark transition-colors duration-300">Request
-              a Call Back</a>
+          <!-- Mobile Nav Button -->
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden p-2 text-secondary-dark focus:outline-none"
+          >
+            <!-- Hamburger Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Nav Menu -->
+          <div
+            id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-white shadow-lg rounded-b-3xl hidden flex-col p-5 gap-4 lg:hidden z-50"
+          >
+            <a
+              href="#"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
+              >Home</a
+            >
+            <a
+              href="#talk-to-us"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
+              >Talk to Us</a
+            >
+            <a
+              href="#services"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
+              >Services</a
+            >
+            <a
+              href="#why-choose-mansanwad"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
+              >Why Mansanwad?</a
+            >
+            <a
+              href="#contact"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2"
+              >Contact</a
+            >
+          </div>
+        </header>
+      </div>
+      <section
+        id="hero-section"
+        class="page-max-width flex flex-col md:flex-row gap-6 md:gap-10 p-5 md:p-10 lg:items-center"
+      >
+        <img
+          src="./assets/images/hero-image.webp"
+          class="aspect-4/3 w-full md:w-1/2 rounded-3xl object-cover self-center"
+          alt=""
+        />
+        <div
+          class="w-full md:w-1/2 flex flex-col justify-center md:p-5 rounded-3xl"
+        >
+          <p
+            class="bg-secondary/50 text-secondary-dark px-3 py-1.5 rounded-full w-fit text-sm md:text-base lg:text-base xl:text-base"
+          >
+            Psychotherapy + Hypnotherapy Counselling
+          </p>
+          <h1
+            class="text-4xl md:text-3xl lg:text-4xl xl:text-5xl mt-6 font-heading leading-tight font-medium text-secondary-dark"
+          >
+            When everything feels like too much, you do not have to handle it
+            alone
+          </h1>
+          <p class="text-base md:text-sm lg:text-base mt-3">
+            Thoughtful psychological counseling using mindfulness and
+            hypnotherapy to support emotional balance, clarity, and inner
+            steadiness, without medication.
+          </p>
+
+          <a
+            href="#why-choose-mansanwad"
+            class="bg-secondary-dark text-primary w-fit px-6 py-2 hover:bg-secondary hover:text-secondary-dark rounded-full text-lg md:text-base lg:text-lg xl:text-xl mt-5 text-medium transition-all duration-300"
+          >
+            Get started</a
+          >
+
+          <div
+            class="flex flex-wrap items-center gap-5 pl-2 mt-6 text-lg md:text-base lg:text-lg"
+          >
+            <div class="flex items-center">
+              <span
+                class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"
+              ></span>
+              <p class="">Confidential</p>
+            </div>
+
+            <div class="flex items-center">
+              <span
+                class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"
+              ></span>
+              <p class="">Online + In-person</p>
+            </div>
+
+            <div class="flex items-center">
+              <span
+                class="block w-2 h-2 bg-secondary-dark rounded-full mr-2"
+              ></span>
+              <p class="">Affordable</p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
 
-
-    <!-- FAQ & Contact Section -->
-    <section id="contact" class="page-max-width scroll-mt-24 py-10 px-5 md:p-10">
-      <div class="mb-10">
-        <h2 class="text-3xl md:text-4xl font-heading font-medium text-secondary-dark mb-4">Frequently Asked Questions
-        </h2>
-        <p class="text-gray-700 max-w-2xl text-lg">See how compassionate care and guided growth have helped others find
-          balance, clarity, and confidence.</p>
+      <div class="bg-accent">
+        <section
+          id="talk-to-us"
+          class="scroll-mt-24 page-max-width flex flex-col md:flex-row gap-10 px-5 py-10 md:p-10 items-center"
+        >
+          <div class="w-full md:w-1/2">
+            <h2
+              class="text-4xl font-heading leading-tight font-medium text-secondary-dark mb-6"
+            >
+              If any of this feels familiar,<br />
+              you are in the right place
+            </h2>
+            <ul
+              class="space-y-4 text-lg text-gray-700 list-disc pl-5 marker:text-secondary-dark"
+            >
+              <li>
+                You feel anxious, overwhelmed, or stuck in repetitive thought
+                loops
+              </li>
+              <li>
+                Stress, burnout, or emotional fatigue is spilling into daily
+                life
+              </li>
+              <li>
+                You are struggling with habits, confidence, or self-control
+              </li>
+              <li>
+                Academic pressure or performance anxiety feels unmanageable
+              </li>
+              <li>You want support without medication</li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-secondary-dark text-primary px-8 py-3 rounded-full text-lg font-medium mt-8 hover:opacity-90 transition-opacity"
+            >
+              Talk to Us
+            </a>
+          </div>
+          <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Person sitting"
+              class="w-full h-48 object-cover rounded-3xl"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Person reading"
+              class="w-full h-48 object-cover rounded-3xl"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Person profile"
+              class="w-full h-48 object-cover rounded-3xl"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Flowers"
+              class="w-full h-48 object-cover rounded-3xl"
+            />
+          </div>
+        </section>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <!-- Left: Still Unsure Card -->
-        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm h-fit">
-          <h3 class="text-2xl font-bold mb-4">Still unsure?</h3>
-          <p class="text-gray-700 text-lg mb-8">If you are confused about which service to choose, request a call back
-            and we will help you decide.</p>
-          <a href="#"
-            class="bg-secondary-dark/80 text-white w-fit px-8 py-3 rounded-full text-lg font-medium hover:bg-secondary-dark transition-colors duration-300 block mb-4 text-center">Request
-            a Call Back</a>
-          <p class="text-gray-500 text-sm">No pressure. Just clarity.</p>
-        </div>
-
-        <!-- Right: FAQ Accordion -->
-        <div class="lg:col-span-2 space-y-4">
-          <!-- Item 1 -->
-          <div class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group">
-            <div class="flex justify-between items-center accordion-header">
-              <h3 class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors">Is this
-                therapy or counseling?</h3>
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-            <div class="accordion-content hidden mt-4 text-gray-700">
-              <p>We offer both. Counseling typically focuses on specific issues and short-term goals, while therapy
-                explores deeper patterns and long-term personal growth. We customize our approach based on your needs.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group">
-            <div class="flex justify-between items-center accordion-header">
-              <h3 class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors">Do you
-                prescribe medication?</h3>
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-            <div class="accordion-content hidden mt-4 text-gray-700">
-              <p>No, we do not prescribe medication. We focus on psychotherapeutic approaches like Hypnotherapy, CBT,
-                and Mindfulness. If medication is needed, we can refer you to a trusted psychiatrist.</p>
-            </div>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group">
-            <div class="flex justify-between items-center accordion-header">
-              <h3 class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors">Are
-                sessions confidential?</h3>
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-            <div class="accordion-content hidden mt-4 text-gray-700">
-              <p>Yes, absolutely. Confidentiality is a cornerstone of our practice. What you share in sessions stays
-                between you and your therapist, with the only exceptions being legal requirements regarding safety.</p>
-            </div>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group">
-            <div class="flex justify-between items-center accordion-header">
-              <h3 class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors">Do you
-                offer online sessions?</h3>
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-            <div class="accordion-content hidden mt-4 text-gray-700">
-              <p>Yes, we offer secure online sessions for clients who prefer the comfort of their own home or live at a
-                distance. In-person sessions are also available.</p>
-            </div>
-          </div>
-
-          <!-- Item 5 -->
-          <div class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group">
-            <div class="flex justify-between items-center accordion-header">
-              <h3 class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors">How do I
-                know what service is right for me?</h3>
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-            <div class="accordion-content hidden mt-4 text-gray-700">
-              <p>You don't need to know exactly what you need before you start. During our initial consultation, we will
-                discuss your challenges and goals to recommend the best approach for you.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="bg-white px-5 md:px-10 py-6">
-      <footer class="flex flex-col md:flex-row items-center md:justify-between">
-        <img src="./assets/logos/logo-full.png" class="w-48 h-48 object-contain" alt="">
-
-        <nav>
-          <ul class="flex flex-wrap justify-center mt-10 md:mt-0 gap-5">
-            <li><a href="#talk-to-us">Talk to Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#why-choose-mansanwad">Why Mansanwad?</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
-
-    <!-- Modals -->
-    <!-- Modal 1: Hypnotherapy -->
-    <div id="modal-hypnotherapy"
-      class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-      <div class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8">
-        <button class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <h2 class="text-3xl font-heading font-medium text-secondary-dark mb-4">Hypnotherapy</h2>
-        <div class="prose prose-lg text-gray-700">
-          <p class="mb-4"><strong>What is Hypnotherapy?</strong></p>
-          <p class="mb-4">Hypnotherapy is a guided therapeutic process that helps you access your subconscious mind—the
-            part of you that holds deep-seated habits, emotions, and memories. Unlike what is often portrayed in movies,
-            hypnosis is simply a state of focused attention and deep relaxation, similar to daydreaming or getting lost
-            in a good book. You remain in control the entire time.</p>
-
-          <p class="mb-4"><strong>How It Helps:</strong></p>
-          <ul class="list-disc pl-5 space-y-2 mb-6">
-            <li><strong>Breaking Habits:</strong> Useful for smoking cessation, overeating, or nail-biting by rewiring
-              automatic responses.</li>
-            <li><strong>Reducing Anxiety & Fears:</strong> addresses the root cause of phobias (like flying or public
-              speaking) and general anxiety.</li>
-            <li><strong>Pain Management:</strong> Helps alleviate chronic pain by altering perception and reducing
-              stress-induced tension.</li>
-            <li><strong>Sleep Improvement:</strong> Promotes deep relaxation to combat insomnia.</li>
-            <li><strong>Trauma Release:</strong> Gently processes past events without re-traumatizing the nervous
-              system.</li>
-          </ul>
-          <p>At Mansanwad, we use a compassionate, non-judgmental approach to help you unlock your inner resources for
-            lasting change.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2: Mindfulness -->
-    <div id="modal-mindfulness"
-      class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-      <div class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8">
-        <button class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <h2 class="text-3xl font-heading font-medium text-secondary-dark mb-4">Mindfulness, CBT, & EFT</h2>
-        <div class="prose prose-lg text-gray-700">
-          <p class="mb-4">We integrate evidence-based techniques to give you practical tools for daily life.</p>
-
-          <h3 class="text-xl font-medium text-secondary-dark mt-4 mb-2">Cognitive Behavioral Therapy (CBT)</h3>
-          <p class="mb-4">CBT focuses on identifying and challenging negative thought patterns. By understanding how
-            your thoughts influence your feelings and behaviors, you can learn to reframe them. It is highly effective
-            for depression, anxiety, and stress management.</p>
-
-          <h3 class="text-xl font-medium text-secondary-dark mt-4 mb-2">Mindfulness</h3>
-          <p class="mb-4">Mindfulness is the practice of being present in the moment without judgment. Through
-            breathwork and awareness exercises, you learn to observe your thoughts rather than being swept away by them.
-            This reduces reactivity and cultivates a sense of calm.</p>
-
-          <h3 class="text-xl font-medium text-secondary-dark mt-4 mb-2">Emotional Freedom Techniques (EFT)</h3>
-          <p class="mb-4">Also known as "tapping," EFT combines cognitive therapy with somatic stimulation of
-            acupressure points. It is a powerful tool for quickly reducing emotional intensity, stress, and cravings.
+      <!-- Services Section -->
+      <section
+        id="services"
+        class="page-max-width scroll-mt-24 px-5 py-10 md:p-10"
+      >
+        <div class="flex flex-col justify-center items-center pb-10">
+          <h2 class="text-3xl font-heading text-secondary-dark font-bold mb-3">
+            Emotional Wellbeing Sessions
+          </h2>
+          <p class="w-full text-center">
+            Work with the subconscious to address habits, fears, emotional
+            blocks, <br class="hidden lg:block" />
+            and stress responses in a safe, guided way.
           </p>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Service 1 -->
+          <div class="flex flex-col gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              class="w-full h-64 object-cover rounded-3xl"
+              alt="Hypnotherapy Session"
+            />
+            <h3
+              class="text-3xl font-heading font-medium text-secondary-dark mt-2"
+            >
+              Hypnotherapy & Mindfulness
+            </h3>
+            <p class="text-gray-700">
+              Work with the subconscious to address habits, fears, emotional
+              blocks, and stress responses in a safe, guided way.
+            </p>
+            <button
+              data-modal-target="modal-hypnotherapy"
+              class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer"
+            >
+              More Information
+            </button>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="flex flex-col gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              class="w-full h-64 object-cover rounded-3xl"
+              alt="Mindfulness Practice"
+            />
+            <h3
+              class="text-3xl font-heading font-medium text-secondary-dark mt-2"
+            >
+              CBT and Integrative therapies
+            </h3>
+            <p class="text-gray-700">
+              Practical tools to manage thoughts, regulate emotions, and build
+              awareness in everyday situations.
+            </p>
+            <button
+              data-modal-target="modal-mindfulness"
+              class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer"
+            >
+              More Information
+            </button>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="flex flex-col gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              class="w-full h-64 object-cover rounded-3xl"
+              alt="Emotional Balance"
+            />
+            <h3
+              class="text-3xl font-heading font-medium text-secondary-dark mt-2"
+            >
+              Life Coaching & Other Psychotherapies
+            </h3>
+            <p class="text-gray-700">
+              Support during periods of change, overwhelm, or emotional
+              instability, when life feels unsettled or unclear.
+            </p>
+            <button
+              data-modal-target="modal-emotional"
+              class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer"
+            >
+              More Information
+            </button>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="flex flex-col gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              class="w-full h-64 object-cover rounded-3xl"
+              alt="Therapy Office"
+            />
+            <h3
+              class="text-3xl font-heading font-medium text-secondary-dark mt-2"
+            >
+              Training and Workshops
+            </h3>
+            <p class="text-gray-700">
+              An integrative approach based on your needs, comfort, and goals.
+            </p>
+            <button
+              data-modal-target="modal-other"
+              class="text-secondary-dark underline underline-offset-4 decoration-1 font-medium hover:text-secondary uppercase text-sm tracking-wide w-fit cursor-pointer"
+            >
+              More Information
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Mansanwad Section -->
+      <div class="bg-accent">
+        <section
+          id="why-choose-mansanwad"
+          class="page-max-width scroll-mt-24 py-10 px-5 md:p-10"
+        >
+          <div class="mb-10">
+            <h2
+              class="text-3xl md:text-4xl font-heading font-medium text-secondary-dark mb-4"
+            >
+              Why choose Mansanwad?
+            </h2>
+            <p class="text-gray-700 max-w-2xl text-lg">
+              Calm, clear, non-rushed support, with a drug-free approach and a
+              strong focus on confidentiality.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+              <h3 class="text-2xl font-bold mb-6">What you can expect</h3>
+              <ul class="space-y-4 text-gray-700 text-lg">
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"
+                  ></span>
+                  Drug-free, supportive care
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"
+                  ></span>
+                  Hypnotherapy and mindfulness as core tools
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"
+                  ></span>
+                  Ethical practice and clear boundaries
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"
+                  ></span>
+                  A calm, non-judgmental environment
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1.5 h-1.5 w-1.5 bg-gray-700 rounded-full flex-shrink-0"
+                  ></span>
+                  Sessions tailored to your pace and needs
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white rounded-3xl p-8 md:p-12 shadow-sm flex flex-col justify-center"
+            >
+              <h3 class="text-2xl font-bold mb-4">
+                You do not need perfect words to begin.
+              </h3>
+              <p class="text-gray-700 text-lg mb-8">
+                Just share what is going on, we will take it from there.
+              </p>
+              <a
+                href="https://wa.me/919076155515"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-secondary-dark/80 text-white w-fit px-8 py-3 rounded-full text-lg font-medium hover:bg-secondary-dark transition-colors duration-300"
+              >
+                Request a Call Back</a
+              >
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
 
-    <!-- Modal 3: Emotional Balance -->
-    <div id="modal-emotional"
-      class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-      <div class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8">
-        <button class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <h2 class="text-3xl font-heading font-medium text-secondary-dark mb-4">Finding Emotional Balance</h2>
-        <div class="prose prose-lg text-gray-700">
-          <p class="mb-4">Life is constantly changing, and sometimes we lose our footing. Whether you are navigating a
-            major life transition, dealing with relationship issues, or simply feeling "off," finding emotional balance
-            is key to resilience.</p>
+      <!-- FAQ & Contact Section -->
+      <section
+        id="contact"
+        class="page-max-width scroll-mt-24 py-10 px-5 md:p-10"
+      >
+        <div class="mb-10">
+          <h2
+            class="text-3xl md:text-4xl font-heading font-medium text-secondary-dark mb-4"
+          >
+            Frequently Asked Questions
+          </h2>
+          <p class="text-gray-700 max-w-2xl text-lg">
+            See how compassionate care and guided growth have helped others find
+            balance, clarity, and confidence.
+          </p>
+        </div>
 
-          <p class="mb-4"><strong>We support you through:</strong></p>
-          <ul class="list-disc pl-5 space-y-2 mb-6">
-            <li><strong>Life Transitions:</strong> Career changes, relocation, breakups, or loss.</li>
-            <li><strong>Overwhelm & Burnout:</strong> When the demands of life exceed your capacity to cope.</li>
-            <li><strong>Emotional Instability:</strong> Mood swings, irritability, or unexplained sadness.</li>
-            <li><strong>Identity & Purpose:</strong> Exploring who you are and what you want from life.</li>
-          </ul>
-          <p>Our goal is not to eliminate difficult emotions, but to help you navigate them with grace and stability,
-            finding a centered place within yourself regardless of external circumstances.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <!-- Left: Still Unsure Card -->
+          <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm h-fit">
+            <h3 class="text-2xl font-bold mb-4">Still unsure?</h3>
+            <p class="text-gray-700 text-lg mb-8">
+              If you are confused about which service to choose, request a call
+              back and we will help you decide.
+            </p>
+            <a
+              href="https://wa.me/919076155515"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-secondary-dark/80 text-white w-fit px-8 py-3 rounded-full text-lg font-medium hover:bg-secondary-dark transition-colors duration-300 block mb-4 text-center"
+            >
+              Request a Call Back</a
+            >
+            <p class="text-gray-500 text-sm">No pressure. Just clarity.</p>
+          </div>
+
+          <!-- Right: FAQ Accordion -->
+          <div class="lg:col-span-2 space-y-4">
+            <!-- Item 1 -->
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  Is this therapy or counseling?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  We offer both. Counseling typically focuses on specific issues
+                  and short-term goals, while therapy explores deeper patterns
+                  and long-term personal growth. We customize our approach based
+                  on your needs.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  Do you prescribe medication?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  No, we do not prescribe medication. We focus on
+                  psychotherapeutic approaches like Hypnotherapy, CBT, and
+                  Mindfulness. If medication is needed, we can refer you to a
+                  trusted psychiatrist.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  Are sessions confidential?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  Yes, absolutely. Confidentiality is a cornerstone of our
+                  practice. What you share in sessions stays between you and
+                  your therapist, with the only exceptions being legal
+                  requirements regarding safety.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  Do you offer online sessions?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  Yes, we offer secure online sessions for clients who prefer
+                  the comfort of their own home or live at a distance. In-person
+                  sessions are also available.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  How do I know what service is right for me?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  You don't need to know exactly what you need before you start.
+                  During our initial consultation, we will discuss your
+                  challenges and goals to recommend the best approach for you.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  Do you provide referrals to psychiatrists or specialized
+                  physicians?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  Yes. If specialized psychiatric care is required, we are happy
+                  to provide professional referrals to ensure you receive the
+                  appropriate level of support.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  Do you provide emergency or crisis management services?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  Our services are designed for non-emergency support only. We
+                  do not offer crisis management or 24/7 emergency intervention.
+                  For immediate danger or life-threatening situations, please
+                  contact local emergency services.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-3xl p-6 shadow-sm cursor-pointer accordion-item group"
+            >
+              <div class="flex justify-between items-center accordion-header">
+                <h3
+                  class="text-lg font-bold text-secondary-dark group-hover:text-secondary transition-colors"
+                >
+                  What is your refund policy?
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 transform transition-transform duration-300 accordion-icon text-secondary-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="accordion-content hidden mt-4 text-gray-700">
+                <p>
+                  All payments made are final and non-refundable. We encourage
+                  you to reach out with any questions you may have before
+                  completing your purchase to ensure our services are the right
+                  fit for your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-white px-5 md:px-10 py-6">
+        <footer
+          class="flex flex-col md:flex-row items-center md:justify-between"
+        >
+          <div class="flex flex-col items-center">
+            <img
+              src="./assets/logos/logo-full.png"
+              class="w-48 h-48 object-contain"
+              alt=""
+            />
+            <p class="text-secondary-dark font-heading text-lg font-semibold">
+              (A unit of Studio Sae)
+            </p>
+            <p class="text-xs text-secondary-dark text-center mt-3">
+              MSME/Udyam registraion number: <br />
+              UDHYAM-MH-18-0130319
+            </p>
+          </div>
+
+          <div>
+            <div
+              class="mb-7 mt-7 md:mt-0 space-y-1.5 flex flex-col items-center md:items-end"
+            >
+              <p class="text-lg font-semibold">Contact Us</p>
+              <p>
+                <span class="font-semibold">Address:</span> Borivali (W), Mumbai
+              </p>
+              <p>
+                <span class="font-semibold">Phone:</span>
+                <a href="tel:9076155515"> +91 9076155515</a>
+              </p>
+              <p>
+                <span class="font-semibold">Email:</span>
+                <a href="mailto:studiosaee@gmail.com">studiosaee@gmail.com</a>
+              </p>
+            </div>
+
+            <nav>
+              <ul class="flex flex-wrap justify-center mt-10 md:mt-0 gap-5">
+                <li><a href="#talk-to-us">Talk to Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-mansanwad">Why Mansanwad?</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Modals -->
+      <!-- Modal 1: Hypnotherapy -->
+      <div
+        id="modal-hypnotherapy"
+        class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4"
+      >
+        <div
+          class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8"
+        >
+          <button
+            class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h2
+            class="text-3xl font-heading font-medium text-secondary-dark mb-4"
+          >
+            Hypnotherapy
+          </h2>
+          <div class="prose prose-lg text-gray-700">
+            <p class="mb-4"><strong>What is Hypnotherapy?</strong></p>
+            <p class="mb-4">
+              Hypnotherapy is a guided therapeutic process that helps you access
+              your subconscious mind—the part of you that holds deep-seated
+              habits, emotions, and memories. Unlike what is often portrayed in
+              movies, hypnosis is simply a state of focused attention and deep
+              relaxation, similar to daydreaming or getting lost in a good book.
+              You remain in control the entire time.
+            </p>
+
+            <p class="mb-4"><strong>How It Helps:</strong></p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li>
+                <strong>Breaking Habits:</strong> Useful for smoking cessation,
+                overeating, or nail-biting by rewiring automatic responses.
+              </li>
+              <li>
+                <strong>Reducing Anxiety & Fears:</strong> addresses the root
+                cause of phobias (like flying or public speaking) and general
+                anxiety.
+              </li>
+              <li>
+                <strong>Pain Management:</strong> Helps alleviate chronic pain
+                by altering perception and reducing stress-induced tension.
+              </li>
+              <li>
+                <strong>Sleep Improvement:</strong> Promotes deep relaxation to
+                combat insomnia.
+              </li>
+              <li>
+                <strong>Trauma Release:</strong> Gently processes past events
+                without re-traumatizing the nervous system.
+              </li>
+            </ul>
+            <p>
+              At Mansanwad, we use a compassionate, non-judgmental approach to
+              help you unlock your inner resources for lasting change.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Modal 4: Other Psychotherapies -->
-    <div id="modal-other"
-      class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-      <div class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8">
-        <button class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <h2 class="text-3xl font-heading font-medium text-secondary-dark mb-4">Other Psychotherapies</h2>
-        <div class="prose prose-lg text-gray-700">
-          <p class="mb-4">One size does not fit all in therapy. We draw from a diverse range of therapeutic modalities
-            to create a personalized plan for you.</p>
+      <!-- Modal 2: Mindfulness -->
+      <div
+        id="modal-mindfulness"
+        class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4"
+      >
+        <div
+          class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8"
+        >
+          <button
+            class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h2
+            class="text-3xl font-heading font-medium text-secondary-dark mb-4"
+          >
+            Mindfulness, CBT, & EFT
+          </h2>
+          <div class="prose prose-lg text-gray-700">
+            <p class="mb-4">
+              We integrate evidence-based techniques to give you practical tools
+              for daily life.
+            </p>
 
-          <p class="mb-4"><strong>Depending on your needs, we may incorporate:</strong></p>
-          <ul class="list-disc pl-5 space-y-2 mb-6">
-            <li><strong>Humanistic Therapy:</strong> Focusing on self-discovery and personal growth.</li>
-            <li><strong>Psychodynamic Therapy:</strong> Exploring how past experiences influence current behavior.</li>
-            <li><strong>Solution-Focused Brief Therapy (SFBT):</strong> Concentrating on finding solutions in the
-              present rather than analyzing the past.</li>
-            <li><strong>Art & Expressive Therapies:</strong> Using creativity to access emotions that are hard to put
-              into words.</li>
-          </ul>
-          <p>We work collaboratively with you to find the approach that feels most comfortable and effective for your
-            unique journey.</p>
+            <h3 class="text-xl font-medium text-secondary-dark mt-4 mb-2">
+              Cognitive Behavioral Therapy (CBT)
+            </h3>
+            <p class="mb-4">
+              CBT focuses on identifying and challenging negative thought
+              patterns. By understanding how your thoughts influence your
+              feelings and behaviors, you can learn to reframe them. It is
+              highly effective for depression, anxiety, and stress management.
+            </p>
+
+            <h3 class="text-xl font-medium text-secondary-dark mt-4 mb-2">
+              Mindfulness
+            </h3>
+            <p class="mb-4">
+              Mindfulness is the practice of being present in the moment without
+              judgment. Through breathwork and awareness exercises, you learn to
+              observe your thoughts rather than being swept away by them. This
+              reduces reactivity and cultivates a sense of calm.
+            </p>
+
+            <h3 class="text-xl font-medium text-secondary-dark mt-4 mb-2">
+              Emotional Freedom Techniques (EFT)
+            </h3>
+            <p class="mb-4">
+              Also known as "tapping," EFT combines cognitive therapy with
+              somatic stimulation of acupressure points. It is a powerful tool
+              for quickly reducing emotional intensity, stress, and cravings.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const triggers = document.querySelectorAll('[data-modal-target]');
-        const closeButtons = document.querySelectorAll('.modal-close');
+      <!-- Modal 3: Emotional Balance -->
+      <div
+        id="modal-emotional"
+        class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4"
+      >
+        <div
+          class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8"
+        >
+          <button
+            class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h2
+            class="text-3xl font-heading font-medium text-secondary-dark mb-4"
+          >
+            Finding Emotional Balance
+          </h2>
+          <div class="prose prose-lg text-gray-700">
+            <p class="mb-4">
+              Life is constantly changing, and sometimes we lose our footing.
+              Whether you are navigating a major life transition, dealing with
+              relationship issues, or simply feeling "off," finding emotional
+              balance is key to resilience.
+            </p>
 
-        function toggleModal(modalId, show) {
-          const modal = document.getElementById(modalId);
-          if (!modal) return;
+            <p class="mb-4"><strong>We support you through:</strong></p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li>
+                <strong>Life Transitions:</strong> Career changes, relocation,
+                breakups, or loss.
+              </li>
+              <li>
+                <strong>Overwhelm & Burnout:</strong> When the demands of life
+                exceed your capacity to cope.
+              </li>
+              <li>
+                <strong>Emotional Instability:</strong> Mood swings,
+                irritability, or unexplained sadness.
+              </li>
+              <li>
+                <strong>Identity & Purpose:</strong> Exploring who you are and
+                what you want from life.
+              </li>
+            </ul>
+            <p>
+              Our goal is not to eliminate difficult emotions, but to help you
+              navigate them with grace and stability, finding a centered place
+              within yourself regardless of external circumstances.
+            </p>
+          </div>
+        </div>
+      </div>
 
-          if (show) {
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-          } else {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.style.overflow = '';
+      <!-- Modal 4: Other Psychotherapies -->
+      <div
+        id="modal-other"
+        class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4"
+      >
+        <div
+          class="bg-white rounded-3xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8"
+        >
+          <button
+            class="modal-close absolute top-4 right-4 p-2 text-gray-500 hover:text-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h2
+            class="text-3xl font-heading font-medium text-secondary-dark mb-4"
+          >
+            Other Psychotherapies
+          </h2>
+          <div class="prose prose-lg text-gray-700">
+            <p class="mb-4">
+              One size does not fit all in therapy. We draw from a diverse range
+              of therapeutic modalities to create a personalized plan for you.
+            </p>
+
+            <p class="mb-4">
+              <strong>Depending on your needs, we may incorporate:</strong>
+            </p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li>
+                <strong>Humanistic Therapy:</strong> Focusing on self-discovery
+                and personal growth.
+              </li>
+              <li>
+                <strong>Psychodynamic Therapy:</strong> Exploring how past
+                experiences influence current behavior.
+              </li>
+              <li>
+                <strong>Solution-Focused Brief Therapy (SFBT):</strong>
+                Concentrating on finding solutions in the present rather than
+                analyzing the past.
+              </li>
+              <li>
+                <strong>Art & Expressive Therapies:</strong> Using creativity to
+                access emotions that are hard to put into words.
+              </li>
+            </ul>
+            <p>
+              We work collaboratively with you to find the approach that feels
+              most comfortable and effective for your unique journey.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const triggers = document.querySelectorAll("[data-modal-target]");
+          const closeButtons = document.querySelectorAll(".modal-close");
+
+          function toggleModal(modalId, show) {
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+
+            if (show) {
+              modal.classList.remove("hidden");
+              modal.classList.add("flex");
+              document.body.style.overflow = "hidden"; // Prevent background scrolling
+            } else {
+              modal.classList.add("hidden");
+              modal.classList.remove("flex");
+              document.body.style.overflow = "";
+            }
           }
-        }
 
-        triggers.forEach(trigger => {
-          trigger.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = trigger.getAttribute('data-modal-target');
-            toggleModal(targetId, true);
+          triggers.forEach((trigger) => {
+            trigger.addEventListener("click", (e) => {
+              e.preventDefault();
+              const targetId = trigger.getAttribute("data-modal-target");
+              toggleModal(targetId, true);
+            });
           });
-        });
 
-        closeButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            const modal = button.closest('.fixed');
-            if (modal) {
-              toggleModal(modal.id, false);
-            }
-          });
-        });
-
-        // Close on click outside
-        document.querySelectorAll('.fixed').forEach(modal => {
-          modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-              toggleModal(modal.id, false);
-            }
-          });
-        });
-
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') {
-            const openModal = document.querySelector('.fixed:not(.hidden)');
-            if (openModal) {
-              toggleModal(openModal.id, false);
-            }
-          }
-        });
-
-        // FAQ Accordion
-        const accordionItems = document.querySelectorAll('.accordion-item');
-
-        accordionItems.forEach(item => {
-          const header = item.querySelector('.accordion-header');
-
-          header.addEventListener('click', () => {
-            const content = item.querySelector('.accordion-content');
-            const icon = item.querySelector('.accordion-icon');
-
-            // Toggle current item
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-
-            // Optional: Close others
-            accordionItems.forEach(otherItem => {
-              if (otherItem !== item) {
-                otherItem.querySelector('.accordion-content').classList.add('hidden');
-                otherItem.querySelector('.accordion-icon').classList.remove('rotate-180');
+          closeButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+              const modal = button.closest(".fixed");
+              if (modal) {
+                toggleModal(modal.id, false);
               }
             });
           });
-        });
-      });
 
-      // Mobile Menu Logic
-      const mobileBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileLinks = document.querySelectorAll('.mobile-link');
+          // Close on click outside
+          document.querySelectorAll(".fixed").forEach((modal) => {
+            modal.addEventListener("click", (e) => {
+              if (e.target === modal) {
+                toggleModal(modal.id, false);
+              }
+            });
+          });
 
-      if (mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-          mobileMenu.classList.toggle('flex');
+          // Close on Escape key
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+              const openModal = document.querySelector(".fixed:not(.hidden)");
+              if (openModal) {
+                toggleModal(openModal.id, false);
+              }
+            }
+          });
 
-          // Toggle Icon (Optional: Simple switch for now)
-          const iconPath = mobileBtn.querySelector('path');
-          if (mobileMenu.classList.contains('hidden')) {
-            iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger
-          } else {
-            iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Close X
-          }
-        });
+          // FAQ Accordion
+          const accordionItems = document.querySelectorAll(".accordion-item");
 
-        // Close menu when a link is clicked
-        mobileLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('flex');
-            mobileBtn.querySelector('path').setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Reset to Hamburger
+          accordionItems.forEach((item) => {
+            const header = item.querySelector(".accordion-header");
+
+            header.addEventListener("click", () => {
+              const content = item.querySelector(".accordion-content");
+              const icon = item.querySelector(".accordion-icon");
+
+              // Toggle current item
+              content.classList.toggle("hidden");
+              icon.classList.toggle("rotate-180");
+
+              // Optional: Close others
+              accordionItems.forEach((otherItem) => {
+                if (otherItem !== item) {
+                  otherItem
+                    .querySelector(".accordion-content")
+                    .classList.add("hidden");
+                  otherItem
+                    .querySelector(".accordion-icon")
+                    .classList.remove("rotate-180");
+                }
+              });
+            });
           });
         });
 
-        // Close when clicking outside
-        document.addEventListener('click', (e) => {
-          if (!mobileBtn.contains(e.target) && !mobileMenu.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('flex');
-            mobileBtn.querySelector('path').setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-          }
-        });
-      }
-    </script>
-  </main>
-</body>
+        // Mobile Menu Logic
+        const mobileBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileLinks = document.querySelectorAll(".mobile-link");
 
+        if (mobileBtn && mobileMenu) {
+          mobileBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("flex");
+
+            // Toggle Icon (Optional: Simple switch for now)
+            const iconPath = mobileBtn.querySelector("path");
+            if (mobileMenu.classList.contains("hidden")) {
+              iconPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16"); // Hamburger
+            } else {
+              iconPath.setAttribute("d", "M6 18L18 6M6 6l12 12"); // Close X
+            }
+          });
+
+          // Close menu when a link is clicked
+          mobileLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+              mobileMenu.classList.remove("flex");
+              mobileBtn
+                .querySelector("path")
+                .setAttribute("d", "M4 6h16M4 12h16M4 18h16"); // Reset to Hamburger
+            });
+          });
+
+          // Close when clicking outside
+          document.addEventListener("click", (e) => {
+            if (
+              !mobileBtn.contains(e.target) &&
+              !mobileMenu.contains(e.target) &&
+              !mobileMenu.classList.contains("hidden")
+            ) {
+              mobileMenu.classList.add("hidden");
+              mobileMenu.classList.remove("flex");
+              mobileBtn
+                .querySelector("path")
+                .setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+            }
+          });
+        }
+      </script>
+    </main>
+  </body>
 </html>
