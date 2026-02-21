@@ -18,16 +18,19 @@
 
   <body>
     <main>
-      <div class="bg-white sticky top-0 px-5 md:px-10 py-2.5">
+      <!-- Header -->
+      <div class="bg-white sticky top-0 px-5 md:px-10 py-2.5 z-10">
         <header
           class="page-max-width flex items-center justify-between relative"
         >
           <div class="flex flex-row items-end space-x-2">
-            <img
-              src="./assets/logos/logo.png"
-              class="w-24 h-24 object-contain"
-              alt="Logo"
-            />
+            <a href="/">
+              <img
+                src="./assets/logos/logo.png"
+                class="w-24 h-24 object-contain"
+                alt="Logo"
+              />
+            </a>
             <p class="h-fit mb-1 text-secondary font-heading font-medium">
               (A unit of Studio Sae)
             </p>
@@ -36,11 +39,12 @@
           <!-- Desktop Nav -->
           <nav class="hidden lg:block">
             <ul class="flex gap-5">
-              <li><a href="#">Home</a></li>
-              <li><a href="#talk-to-us">Talk to Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#why-choose-mansanwad">Why Mansanwad?</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/#talk-to-us">Talk to Us</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="/academic-consultancy">Academic Consultancy</a></li>
+              <li><a href="/#services">Services</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
           </nav>
 
@@ -72,33 +76,40 @@
             class="absolute top-full left-0 w-full bg-white shadow-lg rounded-b-3xl hidden flex-col p-5 gap-4 lg:hidden z-50"
           >
             <a
-              href="#"
+              href="/"
               class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
               >Home</a
             >
             <a
-              href="#talk-to-us"
+              href="/#talk-to-us"
               class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
               >Talk to Us</a
             >
             <a
-              href="#services"
+              href="/#about"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
+              >About</a
+            >
+            <a
+              href="/academic-consultancy"
+              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
+              >Academic Consultancy</a
+            >
+            <a
+              href="/#services"
               class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
               >Services</a
             >
             <a
-              href="#why-choose-mansanwad"
-              class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2 border-b border-gray-100"
-              >Why Mansanwad?</a
-            >
-            <a
-              href="#contact"
+              href="/#contact"
               class="mobile-link text-lg font-medium text-secondary-dark hover:text-secondary py-2"
               >Contact</a
             >
           </div>
         </header>
       </div>
+
+      <!-- Hero section -->
       <section
         id="hero-section"
         class="page-max-width flex flex-col md:flex-row gap-6 md:gap-10 p-5 md:p-10 lg:items-center"
@@ -162,6 +173,7 @@
         </div>
       </section>
 
+      <!-- Talk to us -->
       <div class="bg-accent">
         <section
           id="talk-to-us"
@@ -202,25 +214,149 @@
           </div>
           <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
             <img
-              src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Person sitting"
+              src="./assets/images/block-1.jpg"
+              alt="Person stressed"
               class="w-full h-48 object-cover rounded-3xl"
             />
             <img
-              src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Person reading"
+              src="./assets/images/block-2.jpg"
+              alt="Peace"
               class="w-full h-48 object-cover rounded-3xl"
             />
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Person profile"
+              src="./assets/images/block-3.jpg"
+              alt="Person stressed"
               class="w-full h-48 object-cover rounded-3xl"
             />
             <img
-              src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Flowers"
+              src="./assets/images/block-4.jpg"
+              alt="Person stressed"
               class="w-full h-48 object-cover rounded-3xl"
             />
+          </div>
+        </section>
+      </div>
+
+      <!-- About Mansanwad -->
+      <section
+        id="about"
+        class="page-max-width scroll-mt-24 py-10 px-5 md:p-10 circular-pattern-bg scroll-mt-24"
+      >
+        <h3
+          class="text-4xl font-heading leading-tight font-medium text-secondary-dark mb-6"
+        >
+          About Mansanwad
+        </h3>
+
+        <p class="lg:w-3/4 mb-8 text-lg">
+          Mansanwad is a practice which is based on the premise of the
+          psychology-based idea that a meaningful dialogue with the mind brings
+          about a sustainable change.
+          <br /><br />
+          The name is based on its most fundamental philosophy, which is to
+          appeal to the mind by using systematic thought, scientific knowledge
+          and practical psychological methods.
+        </p>
+        <p class="font-semibold text-lg">
+          Mansanwad is an in-house psychological platform with:
+        </p>
+        <ul
+          class="list-disc pl-5 marker:text-secondary-dark text-lg space-y-2 mt-3"
+        >
+          <li>Academic / Research Mentorship.</li>
+          <li>Training and Internship Programs: Professional.</li>
+          <li>Hypnotherapy and Mindfulness-Based Interventions.</li>
+          <li>CBT and Integrative Psychological therapies.</li>
+        </ul>
+
+        <p class="text-lg mt-3 mb-3 lg:w-3/4">
+          The practice is meant to bridge the gap between psychological theory
+          and reality, whether in academic research, professional development or
+          personal emotional work.
+          <br /><br />
+          Mansanwad can be translated into:
+        </p>
+
+        <ul
+          class="list-disc pl-5 marker:text-secondary-dark text-lg space-y-2 mt-3"
+        >
+          <li>Deep psychology instead of superficial answers.</li>
+          <li>Organized cognitive structures.</li>
+          <li>Clinical practice evidence-based.</li>
+          <li>Professional and moral principles.</li>
+          <li>The intellectual and emotional development in the long term.</li>
+        </ul>
+        <p class="text-lg mt-3 mb-3 lg:w-3/4">
+          Mansanwad is not designed as a generic service provider, but as a
+          systematic psychological ecosystem - where research, training and
+          therapy overlap in one consistent model.
+        </p>
+      </section>
+
+      <!-- About the founder -->
+      <div class="bg-accent">
+        <section
+          class="page-max-width scroll-mt-24 py-10 px-5 md:p-10 flex flex-col md:flex-row gap-10"
+        >
+          <div class="w-full md:w-1/3 lg:w-1/4 shrink-0">
+            <img
+              src="./assets/images/founder.webp"
+              alt=""
+              class="w-full h-auto rounded-3xl"
+            />
+          </div>
+
+          <div class="w-3/4">
+            <h3
+              class="text-4xl font-heading leading-tight font-medium text-secondary-dark mb-6"
+            >
+              About the founder
+            </h3>
+
+            <p class="mt-4 text-lg">
+              Sailee Lokre is a psychology practitioner and academic mentor
+              whose practice is based on systematic psychological science,
+              therapeutic integrity, and evidence-based practice.
+              <br />
+              <br />
+              She has formal education in Clinical Psychology and certifications
+              in Cognitive Behavioral Therapy (CBT), Mindfulness and Clinical
+              Hypnotherapy and her practice combines cognitive, behavioral, and
+              experiential models into an ethical and client-centered framework.
+              <br /><br />
+              Her work is spread over four fields of psychology:
+            </p>
+            <ul
+              class="text-lg list-disc pl-5 marker:text-secondary-dark space-y-2 mt-3"
+            >
+              <li>Scholar and research mentoring.</li>
+              <li>Practical psychological education and internship.</li>
+              <li>Hypnotherapy and mindfulness-based.</li>
+              <li>CBT and integrative therapeutic practice.</li>
+            </ul>
+            <p class="text-lg mt-3">
+              She works in collaboration with students, professionals, and
+              persons who are interested in having a structured psychological
+              clarity, be it in research, career focus, or emotional
+              development.
+              <br /><br />
+              She believes in her professional philosophy based on the
+              following:
+            </p>
+            <ul
+              class="text-lg list-disc pl-5 marker:text-secondary-dark space-y-2 mt-3"
+            >
+              <li>Conceptual precision</li>
+              <li>Evidence-informed practice</li>
+              <li>Reflective learning</li>
+              <li>Principles of cognitive restructuring.</li>
+              <li>Ethical responsibility</li>
+            </ul>
+            <p class="mt-3 text-lg">
+              Her practice does not present marriage and family therapy as
+              advice-based practice; instead, it focuses on facilitated
+              insights, frameworks, and quantifiable psychological growth.
+            </p>
           </div>
         </section>
       </div>
@@ -244,7 +380,7 @@
           <!-- Service 1 -->
           <div class="flex flex-col gap-4">
             <img
-              src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              src="./assets/images/mindfulness.jpg"
               class="w-full h-64 object-cover rounded-3xl"
               alt="Hypnotherapy Session"
             />
@@ -268,7 +404,7 @@
           <!-- Service 2 -->
           <div class="flex flex-col gap-4">
             <img
-              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              src="./assets/images/cbt.jpg"
               class="w-full h-64 object-cover rounded-3xl"
               alt="Mindfulness Practice"
             />
@@ -292,7 +428,7 @@
           <!-- Service 3 -->
           <div class="flex flex-col gap-4">
             <img
-              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              src="./assets/images/life-coaching.jpg"
               class="w-full h-64 object-cover rounded-3xl"
               alt="Emotional Balance"
             />
@@ -316,7 +452,7 @@
           <!-- Service 4 -->
           <div class="flex flex-col gap-4">
             <img
-              src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              src="./assets/images/workshops.jpg"
               class="w-full h-64 object-cover rounded-3xl"
               alt="Therapy Office"
             />
@@ -734,6 +870,7 @@
         </div>
       </section>
 
+      <!-- Footer -->
       <div class="bg-white px-5 md:px-10 py-6">
         <footer
           class="flex flex-col md:flex-row items-center md:justify-between"
@@ -773,10 +910,13 @@
 
             <nav>
               <ul class="flex flex-wrap justify-center mt-10 md:mt-0 gap-5">
-                <li><a href="#talk-to-us">Talk to Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-choose-mansanwad">Why Mansanwad?</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/#talk-to-us">Talk to Us</a></li>
+                <li><a href="/#about">About</a></li>
+                <li>
+                  <a href="/academic-consultancy">Academic Consultancy</a>
+                </li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -927,9 +1067,9 @@
         </div>
       </div>
 
-      <!-- Modal 3: Emotional Balance -->
+      <!-- Modal 3: Training and Workshops -->
       <div
-        id="modal-emotional"
+        id="modal-other"
         class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4"
       >
         <div
@@ -956,47 +1096,60 @@
           <h2
             class="text-3xl font-heading font-medium text-secondary-dark mb-4"
           >
-            Finding Emotional Balance
+            Training and Workshops
           </h2>
           <div class="prose prose-lg text-gray-700">
             <p class="mb-4">
-              Life is constantly changing, and sometimes we lose our footing.
-              Whether you are navigating a major life transition, dealing with
-              relationship issues, or simply feeling "off," finding emotional
-              balance is key to resilience.
+              At Studiô Saé - (Mansanwad) , we conduct structured, experiential,
+              and skill-based programs designed to promote psychological
+              awareness, professional development, and personal transformation.
             </p>
 
-            <p class="mb-4"><strong>We support you through:</strong></p>
+            <p class="mb-4"><strong>We conduct:</strong></p>
             <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li>De-addiction awareness and relapse prevention workshops</li>
+              <li>Art-based therapeutic expression sessions</li>
+              <li>Guided relaxation and clinical hypnosis workshops</li>
+              <li>Inner child healing and emotional processing sessions</li>
+              <li>Mindfulness and stress management programs</li>
+              <li>Emotional intelligence and resilience-building workshops</li>
+              <li>Subconscious reconditioning and self-exploration sessions</li>
               <li>
-                <strong>Life Transitions:</strong> Career changes, relocation,
-                breakups, or loss.
-              </li>
-              <li>
-                <strong>Overwhelm & Burnout:</strong> When the demands of life
-                exceed your capacity to cope.
-              </li>
-              <li>
-                <strong>Emotional Instability:</strong> Mood swings,
-                irritability, or unexplained sadness.
-              </li>
-              <li>
-                <strong>Identity & Purpose:</strong> Exploring who you are and
-                what you want from life.
+                Mental health awareness programs for schools, colleges, and
+                organizations
               </li>
             </ul>
+
+            <p class="mb-4"><strong>Training Programs Include:</strong></p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li>
+                Internship programs (short-term & structured training-based)
+              </li>
+              <li>Skill-based psychology training modules</li>
+              <li>Certificate courses in therapeutic techniques</li>
+              <li>Case discussion and diagnostic clarity sessions</li>
+              <li>Mentorship and supervised practical exposure</li>
+            </ul>
+
             <p>
-              Our goal is not to eliminate difficult emotions, but to help you
-              navigate them with grace and stability, finding a centered place
-              within yourself regardless of external circumstances.
+              Our programs are designed to bridge theory with
+              application—helping participants develop clarity, competence, and
+              confidence in both personal and professional spaces.
             </p>
+
+            <a
+              href="/academic-consultancy"
+              class="bg-secondary text-white px-6 py-2.5 rounded-full block w-fit mt-10 text-center"
+            >
+              More details about workshops and academic consultancy
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Modal 4: Other Psychotherapies -->
       <div
-        id="modal-other"
+        id="modal-emotional"
         class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4"
       >
         <div
